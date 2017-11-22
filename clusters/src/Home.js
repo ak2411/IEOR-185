@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Link} from 'react-router-dom';
 
-var QRCode = require('qrcode.react');
-class App extends Component {
+class Home extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Home</h1>
         </header>
         <p className="App-intro">
-          <QRCode value="akosasih" />
+        Hello home
         </p>
-        <Link to="/about">About</Link>
       </div>
     );
   }
 }
 
-export default App;
+export default Home;

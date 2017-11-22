@@ -3,22 +3,30 @@ import logo from './logo.svg';
 import './App.css';
 import {Link} from 'react-router-dom';
 
-var QRCode = require('qrcode.react');
-class App extends Component {
+class About extends Component {
+
+  componentWillMount () {
+    console.log('About MOUNT');
+  }
+
+  componentWillUnmount () {
+    console.log('About UNMOUNT');
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">About</h1>
         </header>
         <p className="App-intro">
-          <QRCode value="akosasih" />
+          About Clusters
         </p>
-        <Link to="/about">About</Link>
+        <Link to="/">App</Link>
       </div>
     );
   }
 }
 
-export default App;
+export default About;
