@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Navb from './Navb';
 import './App.css';
 import {Link} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
+      <div>
+      <Navb/>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -16,6 +19,7 @@ class App extends Component {
         </p>
         <Link to="/about">About</Link>
       </div>
+    </div>
     );
   }
 }
