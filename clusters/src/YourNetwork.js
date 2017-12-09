@@ -4,12 +4,13 @@ import SocialGroups from './SocialGroups'
 
 class YourNetwork extends Component {
   render() {
+    /*const email = this.props.email;*/
     return (
       <div>
       <h1> Your Network </h1>
       <div>
         <NewestConnections />
-        <SocialGroups />
+        <SocialGroups/>
       </div>
       </div>
     );
