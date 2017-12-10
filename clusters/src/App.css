@@ -1,3 +1,14 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #F9F9F9;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5em;
+  width:100vw;
+}
+
 .App {
   text-align: center;
 }

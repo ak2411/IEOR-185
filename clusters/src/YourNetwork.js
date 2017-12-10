@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import NewestConnections from './NewestConnections'
 import SocialGroups from './SocialGroups'
+import {Grid, Row, Col} from 'react-bootstrap';
 
 class YourNetwork extends Component {
   render() {
     /*const email = this.props.email;*/
     return (
-      <div>
-      <h1> Your Network </h1>
-      <div>
-        <NewestConnections />
-        <SocialGroups/>
-      </div>
-      </div>
+      <Grid>
+      <NewestConnections />
+      <SocialGroups/>
+      </Grid>
     );
   }
 }
