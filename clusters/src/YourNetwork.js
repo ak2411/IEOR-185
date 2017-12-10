@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NewestConnections from './NewestConnections'
 import SocialGroups from './SocialGroups'
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Grid} from 'react-bootstrap';
 
 class YourNetwork extends Component {
   render() {

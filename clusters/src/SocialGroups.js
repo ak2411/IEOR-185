@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Groups from './Groups';
-import {Nav, NavDropdown, MenuItem, Row, Col, Tab, Tabs} from 'react-bootstrap';
+import {Row, Col, Tab, Tabs} from 'react-bootstrap';
 class SocialGroups extends Component {
   constructor(props){
     super(props);

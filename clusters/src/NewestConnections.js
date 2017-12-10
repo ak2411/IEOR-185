@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import People from './People';
-import {Grid, Row,Col} from 'react-bootstrap';
+import {Row,Col} from 'react-bootstrap';
 
 // const peopleNames = new Map(['fedekunze', "Federico Kunze"]);
 
