@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Jumbotron, Grid, Row, Col, Button} from 'react-bootstrap';
 import { Route } from 'react-router-dom';
-import JoinRequest from './JoinRequest';
+import SignUpForm from './SignUpForm';
 import Footer from './Footer';
 
 class SignUpView extends Component {
@@ -16,11 +16,11 @@ class SignUpView extends Component {
 
   _createAccount(_email, _password, _firstName, _lastName, _dob, _gender) {
     let request = {
-      email: _email
+      email: _email,
       password: _password,
       firsName: _firstName,
       lastName: _lastName,
-      dob: _dob
+      dob: _dob,
       gender: _gender
     }
 
@@ -55,7 +55,7 @@ class SignUpView extends Component {
             <Row>
               <Col md={6} mdOffset={3} sm={8} smOffset={2}>
                 <h1 className="text-white">Join Request</h1>
-                <JoinRequest addJoinRequest={this._addJoinRequest}/>
+                <SignUpForm addJoinRequest={this._addJoinRequest}/>
               </Col>
             </Row>
           </Grid>

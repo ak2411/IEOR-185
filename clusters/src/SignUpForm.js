@@ -41,7 +41,7 @@ class SignUpForm extends Component {
     // Create Account
     this.props.createAccount(
       this._email.value,
-      this._password.value
+      this._password.value,
       this._firstName.value,
       this._lastName.value,
       this._dob.value,

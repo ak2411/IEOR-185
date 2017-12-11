@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Image, Grid, Col, Row} from 'react-bootstrap';
+var moment = require('moment');
+moment().format();
 
 class Activity extends Component {
 
@@ -30,7 +32,7 @@ class Activity extends Component {
     return(
         <Row>
           <Col md={2}>
-            <Image src={this.props.profileImg} circle>
+            <Image src={this.props.profileImg} circle />
           </Col>
           <Col md={8}>
             <p className="name">
